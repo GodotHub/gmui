@@ -1,7 +1,0 @@
-<VBoxContainer>
-	<LineEdit g-model="text"></LineEdit>
-</VBoxContainer>
-
-<Script>
-@onready var data = await reactive({'text': 'text2'})
-</Script>

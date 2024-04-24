@@ -1,6 +1,0 @@
-<Row>
-	<Label :text="text"></Label>
-</Row>
-
-<Script>
-</Script>

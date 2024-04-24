@@ -10,24 +10,10 @@ config_version=5
 
 [application]
 
-config/name="demo"
-config/description="a wonderful project"
-run/main_scene="res://addons/gmui/dist/scenes/pages/index.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://addons/gmui/gmui.png"
+config/name="GMUI"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
 
-[autoload]
+[dotnet]
 
-Values="*res://addons/gmui/scripts/observer/values.gd"
-VnodeHelper="*res://addons/gmui/scripts/vnode/vnode_helper.gd"
-TinyXmlParser="*res://addons/gmui/scripts/complie/tiny_xml_parser.gd"
-Patch="*res://addons/gmui/scripts/vnode/patch.gd"
-
-[display]
-
-window/size/viewport_width="1080"
-window/size/viewport_height="720"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/gmui/plugin.cfg")
+project/assembly_name="GMUI"

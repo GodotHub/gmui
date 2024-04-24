@@ -1,8 +1,0 @@
-<HBoxContainer>
-	<Component g-model:text="text"></Component>
-	<Label :text="text"></Label>
-</HBoxContainer>
-<Script>
-@import('Component', 'res://components/component.gmui')
-@onready var data = await reactive({'text': 'text1'})
-</Script>
