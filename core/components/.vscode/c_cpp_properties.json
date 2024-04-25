@@ -1,5 +1,3 @@
-// Try creating a custom c_cpp_properties.json file from withing vscode itself and then modify it.
-// The most important code to add is the one contained inside "includePath"
 {
     "configurations": [
         {
@@ -7,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/godot-cpp/gen/include",
-                "${workspaceFolder}/src"
+                "${workspaceFolder}/extension"
             ],
             "defines": [
                 "_DEBUG",
@@ -15,12 +13,10 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.22000.0",
-            // example for windows
-            // "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe", 
-            "compilerPath": "pat to the ecompiler",
+            "compilerPath": "D:/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe",
             "cStandard": "c17",
-            "cppStandard": "c++17"
-            // "intelliSenseMode": "windows-msvc-x64"
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
         }
     ],
     "version": 4

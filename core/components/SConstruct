@@ -2,6 +2,11 @@
 import os
 import sys
 
+def recursive_glob(rootdir='.', suffix=''):
+    return [os.path.join(looproot, filename)
+            for looproot, _, filenames in os.walk(rootdir)
+            for filename in filenames if filename.endswith(suffix)]
+
 env = SConscript("godot-cpp/SConstruct")
 
 # For the reference:
@@ -13,19 +18,20 @@ env = SConscript("godot-cpp/SConstruct")
 # - LINKFLAGS are for linking flags
 
 # tweak this if you want to use different folders, or more folders, to store your source code in.
-env.Append(CPPPATH=["extension/src/"])
-sources = Glob("extension/src/*.cpp")
+env.Append(CPPPATH=["extension/src/classes/", "extension/src/register/"])
+sources = recursive_glob("./extension", 'cpp')
+# sources = Glob("extension/*/*.cpp")
 
 if env["platform"] == "macos":
     library = env.SharedLibrary(
-        "game/bin/libgdsummator.{}.{}.framework/libgdsummator.{}.{}".format(
+        "game/bin/libgdgmui.{}.{}.framework/libgdsummator.{}.{}".format(
             env["platform"], env["target"], env["platform"], env["target"]
         ),
         source=sources,
     )
 else:
     library = env.SharedLibrary(
-        "game/bin/libgdsummator{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        "game/bin/libgdgmui{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources,
     )
 
