@@ -20,7 +20,9 @@
             "type": "shell",
             "command": "scons target=template_debug",
             "dependsOrder": "sequence",
-            "dependsOn":["godot-cpp-dir"],
+            "dependsOn": [
+                "godot-cpp-dir"
+            ],
             "presentation": {
                 "echo": true,
                 "revealProblems": "onProblem",
@@ -36,7 +38,10 @@
             "type": "shell",
             "command": "cd ..",
             "dependsOrder": "sequence",
-            "dependsOn":["godot-cpp-dir", "build-godot-cpp"],
+            "dependsOn": [
+                "godot-cpp-dir",
+                "build-godot-cpp"
+            ],
             "presentation": {
                 "echo": true,
                 "reveal": "always",
@@ -51,7 +56,11 @@
             "type": "shell",
             "command": "scons target=template_debug",
             "dependsOrder": "sequence",
-            "dependsOn":["godot-cpp-dir", "build-godot-cpp", "top-level-dir"],
+            "dependsOn": [
+                "godot-cpp-dir",
+                "build-godot-cpp",
+                "top-level-dir"
+            ],
             "presentation": {
                 "echo": true,
                 "revealProblems": "onProblem",
@@ -77,7 +86,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build-extension [dev build]", // or the pat 
+            "label": "build-extension [dev build]",
             "type": "shell",
             "command": "scons target=template_debug dev_build=yes",
             "presentation": {
