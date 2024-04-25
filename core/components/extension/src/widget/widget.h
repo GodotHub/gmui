@@ -16,8 +16,6 @@ class Widget : public CanvasItem
 {
     GDCLASS(Widget, CanvasItem);
 
-    int count;
-
 protected:
     static void _bind_methods();
 

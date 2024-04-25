@@ -1,7 +1,7 @@
-#ifndef SUMMATOR_REGISTER_TYPES_H
-#define SUMMATOR_REGISTER_TYPES_H
+#ifndef WIDGET_REGISTER_TYPES_H
+#define WIDGET_REGISTER_TYPES_H
 
-void initialize_summator_types();
-void uninitialize_summator_types();
+void initialize_widget_types();
+void uninitialize_widget_types();
 
-#endif // SUMMATOR_REGISTER_TYPES_H
+#endif // WIDGET_REGISTER_TYPES_H
