@@ -122,4 +122,5 @@
         "**/*.ilk": true,
         "**/*.pdb": true
     },
+    "search.useIgnoreFiles": false,
 }
