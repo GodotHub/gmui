@@ -1,5 +1,6 @@
 #include "../../include/register/register_types.h"
 // #include "../../include/classes/summator.h"
+#include "../../include/classes/box_render.h"
 #include "../../include/classes/render.h"
 #include "../../include/classes/text.h"
 #include "../../include/classes/widget.h"
@@ -15,7 +16,9 @@ void initialize_gmui_types(ModuleInitializationLevel p_level) {
 		return;
 	}
 	// ClassDB::register_class<Summator>();
+	ClassDB::register_class<BoxRender>();
 	ClassDB::register_class<Render>();
+	ClassDB::register_class<App>();
 	// ClassDB::register_class<Widget>();
 	ClassDB::register_class<Text>();
 }
