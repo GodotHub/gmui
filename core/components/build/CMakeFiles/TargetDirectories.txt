@@ -1,3 +1,0 @@
-D:/Godot/GMUI/core/components/build/CMakeFiles/godot-cpp.dir
-D:/Godot/GMUI/core/components/build/CMakeFiles/ALL_BUILD.dir
-D:/Godot/GMUI/core/components/build/CMakeFiles/ZERO_CHECK.dir
