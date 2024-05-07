@@ -1,0 +1,45 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ZERO_CHECK",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Godot/GMUI/core/components/build/CMakeFiles/5d03f38ee44a8ab6a8c53184ebe06e3f/generate.stamp.rule",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "UTILITY"
+}

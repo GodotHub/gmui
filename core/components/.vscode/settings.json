@@ -123,4 +123,5 @@
         "**/*.pdb": true
     },
     "search.useIgnoreFiles": false,
+    "cmake.sourceDirectory": "D:/Godot/GMUI/core/components/godot-cpp",
 }

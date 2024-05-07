@@ -18,9 +18,11 @@ env = SConscript("godot-cpp/SConstruct")
 # - LINKFLAGS are for linking flags
 
 # tweak this if you want to use different folders, or more folders, to store your source code in.
-env.Append(CPPPATH=["extension/src/classes/", "extension/src/register/"])
+# include dir
+env.Append(CPPPATH=['extension/include/'])
+# cpp file
 sources = recursive_glob("./extension", 'cpp')
-# sources = Glob("extension/*/*.cpp")
+# sources = Glob('extension/src/register/*.cpp')
 
 if env["platform"] == "macos":
     library = env.SharedLibrary(

@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714214916
-app.tscn::PackedScene::8228653623031865472::1714213636::0::1::::<><>::
+::res://::1715103050
+App.gd::GDScript::-1::1715101417::0::1::::<>App<>::
+app.tscn::PackedScene::2173142328378970967::1715101529::0::1::::<><>::res://App.gd
 icon.svg::CompressedTexture2D::7133178227894281727::1713966452::1713966458::1::::<><>::
-Label.gd::GDScript::-1::1714213616::0::1::::<>Text<>::
-::res://bin/::1714214913
-gmui.gdextension::GDExtension::-1::1714163751::0::1::::<><>::
+::res://bin/::1715103046
+gmui.gdextension::GDExtension::-1::1715097729::0::1::::<><>::

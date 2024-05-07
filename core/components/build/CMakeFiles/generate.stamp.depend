@@ -1,0 +1,26 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/FindPython/Support.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/FindPython3.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake
+D:/Godot/GMUI/core/components/build/CMakeFiles/3.26.3/CMakeCXXCompiler.cmake
+D:/Godot/GMUI/core/components/build/CMakeFiles/3.26.3/CMakeRCCompiler.cmake
+D:/Godot/GMUI/core/components/build/CMakeFiles/3.26.3/CMakeSystem.cmake
+D:/Godot/GMUI/core/components/build/CMakeFiles/cmake.verify_globs
+D:/Godot/GMUI/core/components/godot-cpp/CMakeLists.txt
+D:/Godot/GMUI/core/components/godot-cpp/cmake/GodotCompilerWarnings.cmake

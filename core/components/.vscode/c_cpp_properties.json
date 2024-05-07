@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/godot-cpp/gen/include",
-                "${workspaceFolder}/extension/include/**"
+                "${workspaceFolder}/extension/include"
             ],
             "defines": [
                 "_DEBUG",
