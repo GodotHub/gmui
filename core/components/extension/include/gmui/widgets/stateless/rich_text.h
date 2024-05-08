@@ -12,6 +12,10 @@
 
 using namespace godot;
 
+class MultiChildRenderObjectElement;
+class MultiChildRenderObjectWidget;
+class RenderParagraph;
+
 class RichText : public MultiChildRenderObjectWidget {
 	GDCLASS(RichText, MultiChildRenderObjectWidget);
 

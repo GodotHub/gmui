@@ -5,10 +5,14 @@
 #include <windows.h>
 #endif
 
+#include "gmui/elements/component_elements/stateless_element.h"
 #include "gmui/widgets/stateless/rich_text.h"
 #include "gmui/widgets/stateless/stateless_widget.h"
 
 using namespace godot;
+
+class StatefulWidget;
+class BuildContext;
 
 class Text : public StatelessWidget {
 	GDCLASS(Text, StatelessWidget);
@@ -18,7 +22,7 @@ class Text : public StatelessWidget {
 
 public:
 	Text(String text = "", TextAlign align = LEFT, TextStyle *style = nullptr);
-	virtual Widget *_build(Ref<Element>context) override;
+	virtual Widget *_build(Ref<BuildContext> context) override;
 
 protected:
 	static void _bind_methods();

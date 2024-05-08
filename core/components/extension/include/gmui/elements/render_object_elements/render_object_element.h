@@ -21,8 +21,6 @@ public:
 	virtual void attach_render_object() override;
 	virtual void insert_render_object_child(RenderObject *child) = 0;
 	virtual void visit_children(const std::function<void(Element *child)> &visitor) override = 0;
-	virtual Widget *get_widget() override = 0;
-	virtual BuildOwner *get_owner() override = 0;
 
 protected:
 	RenderObject *_render_object;

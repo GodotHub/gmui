@@ -14,7 +14,7 @@ class StatelessElement : public ComponentElement {
 	GDCLASS(StatelessElement, ComponentElement);
 
 public:
-	virtual ~StatelessElement() override = default;
+	virtual ~StatelessElement() override;
 	virtual Widget *build() override;
 
 protected:

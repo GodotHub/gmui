@@ -10,11 +10,14 @@
 
 using namespace godot;
 
+class BuildContext;
+class Widget;
+
 class StatefulElement : public ComponentElement {
 	GDCLASS(StatefulElement, ComponentElement);
 
 public:
-	virtual ~StatefulElement() override = default;
+	virtual ~StatefulElement() override;
 	virtual Widget *build() override;
 
 protected:

@@ -9,7 +9,6 @@
 #include "gmui/widgets/widget.h"
 #include <functional>
 #include <godot_cpp/classes/ref_counted.hpp>
-#include <type_traits>
 
 using namespace godot;
 
@@ -23,12 +22,11 @@ class Element : public RefCounted {
 	GDCLASS(Element, RefCounted);
 
 public:
-	Element();
-	Element(Widget *widget);
+	Element(Widget *widget = nullptr);
 	virtual ~Element();
 	Element *get_parent();
-	virtual Widget *get_widget() = 0;
-	virtual BuildOwner *get_owner() = 0;
+	virtual Widget *get_widget();
+	virtual BuildOwner *get_owner();
 	void mount();
 	virtual void mount(Element *parent) = 0;
 	void rebuild();

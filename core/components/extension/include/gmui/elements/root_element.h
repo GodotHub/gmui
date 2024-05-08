@@ -17,13 +17,11 @@ class RootElement : public Element {
 
 public:
 	using Element::Element;
-	virtual ~RootElement();
+	virtual ~RootElement() override;
 	void set_child(Element *child);
 	void mount(Element *parent) override;
 	void perform_rebuild() override;
 	void visit_children(const std::function<void(Element *child)> &visitor) override;
-	Widget *get_widget() override;
-	BuildOwner *get_owner() override;
 
 protected:
 	static void _bind_methods();

@@ -31,13 +31,5 @@ void RootElement::perform_rebuild() {}
 void RootElement::visit_children(const std::function<void(Element *child)> &visitor) {
 }
 
-Widget *RootElement::get_widget() {
-	return _widget;
-};
-
-BuildOwner *RootElement::get_owner() {
-	return _builder;
-};
-
 void RootElement::_bind_methods() {
 }

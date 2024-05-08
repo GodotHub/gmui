@@ -12,6 +12,9 @@
 
 using namespace godot;
 
+class Element;
+class RootElement;
+
 class RootWidget : public Widget {
 	GDCLASS(RootWidget, Widget);
 	Widget *_child;

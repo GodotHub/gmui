@@ -19,12 +19,12 @@ class ComponentElement : public Element {
 
 public:
 	using Element::Element;
-	virtual ~ComponentElement() override = 0;
+	using Element::get_owner;
+	using Element::get_widget;
+	virtual ~ComponentElement() override;
 	virtual Widget *build() = 0;
 	void mount(Element *parent) override;
 	void perform_rebuild() override;
-	virtual Widget *get_widget() override = 0;
-	virtual BuildOwner *get_owner() override = 0;
 
 protected:
 	Element *_child;
@@ -33,5 +33,4 @@ protected:
 private:
 	void _first_build();
 };
-
 #endif

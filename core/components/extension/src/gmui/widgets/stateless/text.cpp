@@ -8,7 +8,7 @@ Text::Text(String text, TextAlign align, TextStyle *style) {
 	_style = style;
 }
 
-Widget *Text::_build(Ref<Element> context) {
+Widget *Text::_build(Ref<BuildContext> context) {
 	return new RichText(_text, _align, _style);
 }
 

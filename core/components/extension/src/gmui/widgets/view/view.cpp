@@ -10,7 +10,7 @@ View::View(Viewport *viewport, Widget *root_widget) {
 	_child = root_widget;
 }
 
-Widget *View::_build(Ref<Element> context) {
+Widget *View::_build(Ref<BuildContext> context) {
 	return this;
 }
 

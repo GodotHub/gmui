@@ -20,7 +20,7 @@ class View : public StatelessWidget {
 public:
 	View();
 	View(Viewport *viewport, Widget *root_widget);
-	virtual Widget *_build(Ref<Element> context) override;
+	virtual Widget *_build(Ref<BuildContext> context) override;
 	virtual Element *create_element() override;
 
 protected:

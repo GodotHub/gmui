@@ -4,9 +4,6 @@
 
 using namespace godot;
 
-Element::Element() {
-}
-
 Element::Element(Widget *widget) {
 	_widget = widget;
 }

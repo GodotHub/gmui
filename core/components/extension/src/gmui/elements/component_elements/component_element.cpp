@@ -1,5 +1,8 @@
 #include "gmui/elements/component_elements/component_element.h"
 
+ComponentElement::~ComponentElement() {
+}
+
 void ComponentElement::mount(Element *parent) {
 	Element::mount(parent);
 	DEV_ASSERT(_child == nullptr);
@@ -28,7 +31,4 @@ void ComponentElement::_first_build() {
 }
 
 void ComponentElement::_bind_methods() {
-}
-
-ComponentElement::~ComponentElement() {
 }

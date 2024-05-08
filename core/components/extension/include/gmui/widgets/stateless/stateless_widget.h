@@ -5,9 +5,14 @@
 #include <windows.h>
 #endif
 
+#include "gmui/elements/build_context.h"
+#include "gmui/elements/component_elements/stateless_element.h"
 #include "gmui/widgets/widget.h"
 
 using namespace godot;
+
+class BuildContext;
+class Widget;
 
 class StatelessWidget : public Widget {
 	GDCLASS(StatelessWidget, Widget);
@@ -15,7 +20,7 @@ class StatelessWidget : public Widget {
 public:
 	StatelessWidget();
 	virtual ~StatelessWidget() override;
-	virtual Widget *_build(Ref<Element> context) = 0;
+	virtual Widget *_build(Ref<BuildContext> context) = 0;
 
 protected:
 	static void _bind_methods();
