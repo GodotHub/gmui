@@ -37,7 +37,7 @@ void Element::mount(Element *parent) {
 	_builder = _parent ? _parent->get_owner() : nullptr;
 	DEV_ASSERT(_builder);
 	Identity *id = _widget->get_identity();
-	if (typeid(*id).name() == "class GlobalId") {
+	if (typeid(*id) == typeid(Identity)) {
 	}
 }
 

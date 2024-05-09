@@ -11,10 +11,6 @@ Widget::~Widget() {
 	delete id;
 }
 
-bool Widget::operator==(const Widget &widget) {
-	return this == &widget;
-}
-
 bool Widget::can_update(const Ref<Widget> old_widget, const Ref<Widget> new_widget) {
 	return typeid(*(old_widget.ptr())) == typeid(*(new_widget.ptr())) && old_widget->get_identity() == new_widget->get_identity();
 }

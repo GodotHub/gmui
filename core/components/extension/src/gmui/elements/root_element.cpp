@@ -18,12 +18,7 @@ void RootElement::mount(Element *parent) {
 }
 
 void RootElement::_rebuild() {
-	try {
-		_child = update_child(_child, ((RootWidget *)_widget)->get_child());
-	} catch (const std::exception &e) {
-		ERR_FAIL_EDMSG("update_child fail!\n" + *(e.what()));
-		_child = nullptr;
-	}
+	_child = update_child(_child, ((RootWidget *)_widget)->get_child());
 }
 
 void RootElement::perform_rebuild() {}

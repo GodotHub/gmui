@@ -13,17 +13,11 @@ void ComponentElement::mount(Element *parent) {
 
 void ComponentElement::perform_rebuild() {
 	Widget *built;
-	try {
-		built = build();
-	} catch (const std::exception &e) {
-	}
+	built = build();
+	ERR_FAIL_NULL(built);
 	Element::perform_rebuild();
-	try {
-		_child = update_child(_child, built);
-		DEV_ASSERT(_child);
-	} catch (const std::exception &e) {
-		ERR_FAIL_EDMSG(e.what());
-	}
+	_child = update_child(_child, built);
+	ERR_FAIL_NULL(_child);
 }
 
 void ComponentElement::_first_build() {

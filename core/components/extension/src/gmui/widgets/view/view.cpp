@@ -2,11 +2,8 @@
 
 using namespace godot;
 
-View::View() {
-}
-
 View::View(Viewport *viewport, Widget *root_widget) {
-	_gd_view = new GDView(*viewport);
+	_gd_view = new GDView(viewport);
 	_child = root_widget;
 }
 

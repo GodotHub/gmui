@@ -1,7 +1,7 @@
 #include "gmui/widgets/id.h"
 
-bool ValueId::operator==(Identity &id) {
-	return typeid(*this) == typeid(id) && typeid(id) == typeid(ValueId) ? value == ((ValueId &)id).value : false;
+bool ValueId::equal(const Ref<Identity> &id) {
+	return typeid(*this) == typeid(*id) && typeid(*id) == typeid(ValueId) ? value == static_cast<ValueId *>(id.ptr())->value : false;
 }
 
 Variant ValueId::get_value() {
@@ -10,6 +10,7 @@ Variant ValueId::get_value() {
 
 void ValueId::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_value"), &ValueId::get_value);
+	ClassDB::bind_method(D_METHOD("equal"), &ValueId::equal);
 }
 
 Identity::Identity() {
