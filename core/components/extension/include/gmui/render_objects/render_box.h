@@ -6,6 +6,7 @@
 #endif
 
 #include "gmui/render_objects/render_object.h"
+#include <godot_cpp/variant/vector2.hpp>
 
 using namespace godot;
 
@@ -16,8 +17,8 @@ class RenderBox : public RenderObject {
 
 public:
 	RenderBox();
-	virtual ~RenderBox() = default;
-	void set_size(Vector2 size);
+	virtual ~RenderBox();
+	void set_size(const Vector2 &size);
 	Vector2 get_size();
 
 protected:

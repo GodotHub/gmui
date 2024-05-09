@@ -13,7 +13,7 @@ class MultiChildRenderObjectElement : public RenderObjectElement {
 	GDCLASS(MultiChildRenderObjectElement, RenderObjectElement);
 
 public:
-	void mount(Element *parent);
+	void mount(Element *parent) override;
 
 protected:
 	TypedArray<Element> _children;

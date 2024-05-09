@@ -48,7 +48,7 @@ class ValueId : public LocalId {
 	Variant value;
 
 public:
-	bool operator==(Identity &id);
+	bool equal(const Ref<Identity> &id);
 	Variant get_value();
 
 protected:

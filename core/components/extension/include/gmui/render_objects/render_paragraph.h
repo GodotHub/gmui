@@ -11,8 +11,10 @@
 using namespace godot;
 
 class RenderParagraph : public RenderBox {
+	GDCLASS(RenderParagraph, RenderBox);
+
 public:
-	RenderParagraph(String text, TextAlign align, TextStyle *style);
+	RenderParagraph(String text, TextAlign align, TextStyle *style = nullptr);
 	~RenderParagraph();
 
 protected:

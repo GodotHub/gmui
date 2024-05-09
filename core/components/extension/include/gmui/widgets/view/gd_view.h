@@ -22,8 +22,7 @@ class GDView : public Object {
 	RID canvas;
 
 public:
-	GDView();
-	GDView(const Viewport &viewport);
+	GDView(Viewport *viewport = nullptr);
 	~GDView();
 	void render();
 

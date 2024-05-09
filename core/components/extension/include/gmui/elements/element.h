@@ -14,7 +14,6 @@ using namespace godot;
 
 class Element;
 class Widget;
-enum ElementLifecycle;
 
 /// @brief 连接widget树和render树的桥梁.
 
@@ -22,6 +21,13 @@ class Element : public RefCounted {
 	GDCLASS(Element, RefCounted);
 
 public:
+	enum ElementLifecycle {
+		INITIAL,
+		ACTIVE,
+		INACTIVE,
+		DEFUNCT,
+	};
+
 	Element(Widget *widget = nullptr);
 	virtual ~Element();
 	Element *get_parent();
@@ -37,13 +43,6 @@ public:
 	Element *inflact_widget(Widget *widget);
 	virtual void attach_render_object();
 	virtual void visit_children(const std::function<void(Element *child)> &visitor) = 0;
-
-	enum ElementLifecycle {
-		INITIAL,
-		ACTIVE,
-		INACTIVE,
-		DEFUNCT,
-	};
 
 protected:
 	Widget *_widget;

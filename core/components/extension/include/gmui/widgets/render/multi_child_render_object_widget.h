@@ -18,7 +18,7 @@ public:
 	virtual ~MultiChildRenderObjectWidget();
 	TypedArray<Widget> get_children() const;
 	virtual MultiChildRenderObjectElement *create_element() override = 0;
-	virtual RenderObject *create_render_object() = 0;
+	virtual RenderObject *create_render_object() override = 0;
 
 protected:
 	TypedArray<Widget> _children = {};

@@ -10,11 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GMUI"
+config/name="game"
 run/main_scene="res://app.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
-
-[dotnet]
-
-project/assembly_name="GMUI"

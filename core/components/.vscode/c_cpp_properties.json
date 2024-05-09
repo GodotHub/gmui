@@ -13,10 +13,10 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "D:/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe",
+            "compilerPath": "D:/clang+llvm-18.1.4-x86_64-pc-windows-msvc/bin/clang-cl.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-clang-x64"
         }
     ],
     "version": 4

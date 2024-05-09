@@ -8,7 +8,7 @@
 			"name": "Run Demo [FROM EDITOR] - [DEBUG MODE]",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "D:\\Godot\\Godot_v4.2.2-stable_win64.exe\\Godot_v4.2.2-stable_win64.exe",
+			"program": "D:\\Godot\\dev-godot\\godot.windows.editor.x86_64.exe",
 			"args": [
 				"--editor",
 				"--path",
@@ -26,7 +26,7 @@
 			"name": "Run Demo [FROM GAME] - [DEBUG MODE]",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "D:\\Godot\\Godot_v4.2.2-stable_win64.exe\\Godot_v4.2.2-stable_win64.exe",
+			"program": "D:\\Godot\\dev-godot\\godot.windows.editor.x86_64.exe",
 			"args": [
 				"--path",
 				"${workspaceFolder}/game",
@@ -43,7 +43,7 @@
 			"name": "Run Demo [FROM EDITOR] - [TEST MODE]",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "D:\\Godot\\Godot_v4.2.2-stable_win64.exe\\Godot_v4.2.2-stable_win64.exe",
+			"program": "D:\\Godot\\dev-godot\\godot.windows.editor.x86_64.exe",
 			"args": [
 				"--editor",
 				"--path",
@@ -58,7 +58,7 @@
 			"name": "Run Demo [FROM GAME] - [TEST MODE]",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "D:\\Godot\\Godot_v4.2.2-stable_win64.exe\\Godot_v4.2.2-stable_win64.exe",
+			"program": "D:\\Godot\\dev-godot\\godot.windows.editor.x86_64.exe",
 			"args": [
 				"--path",
 				"${workspaceFolder}/game",

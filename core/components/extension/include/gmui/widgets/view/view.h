@@ -18,8 +18,7 @@ class View : public StatelessWidget {
 	GDView *_gd_view;
 
 public:
-	View();
-	View(Viewport *viewport, Widget *root_widget);
+	View(Viewport *viewport = nullptr, Widget *root_widget = nullptr);
 	virtual Widget *_build(Ref<BuildContext> context) override;
 	virtual Element *create_element() override;
 

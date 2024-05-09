@@ -8,6 +8,7 @@
 #include "gmui/widgets/root_widget.h"
 #include "gmui/widgets/view/view.h"
 #include <godot_cpp/classes/node.hpp>
+#include <godot_cpp/core/gdvirtual.gen.inc>
 #include <godot_cpp/variant/callable_method_pointer.hpp>
 
 using namespace godot;
@@ -23,7 +24,8 @@ public:
 	App();
 	~App();
 	void _run_app_internal();
-	virtual Widget *_run_app() { return nullptr; };
+	GDVIRTUAL0R(Ref<Widget>, _run_app);
+	// virtual Widget *_run_app() { return nullptr; };
 
 protected:
 	static void _bind_methods();

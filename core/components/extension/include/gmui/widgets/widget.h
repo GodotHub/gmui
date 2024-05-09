@@ -20,7 +20,6 @@ class Widget : public RefCounted {
 public:
 	Widget();
 	virtual ~Widget();
-	bool operator==(const Widget &widget);
 	static bool can_update(const Ref<Widget> old_widget, const Ref<Widget> new_widget);
 	Identity *get_identity() const;
 	virtual Element *create_element() = 0;

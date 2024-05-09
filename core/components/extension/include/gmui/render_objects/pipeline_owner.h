@@ -17,7 +17,7 @@ class PipelineOwner : public RefCounted {
 	TypedArray<RenderObject> _node_needs_layout = {};
 
 public:
-	void add_need_layout_node(const RenderObject &node);
+	void add_need_layout_node(const Ref<RenderObject> &node);
 	TypedArray<RenderObject> get_need_layout_nodes() const;
 
 protected:

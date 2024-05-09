@@ -2,3 +2,4 @@
 /.godot
 /.vscode
 /core/components/build
+/extension/src/**/*.obj

@@ -17,7 +17,7 @@ class TextStyle : public RefCounted {
 	Color color;
 
 public:
-	TextStyle(Color color = Color());
+	TextStyle(Color color = Color(1.0f, 1.0f, 1.0f, 1.0f));
 	~TextStyle();
 	void set_color(const Color &color);
 	Color get_color();
