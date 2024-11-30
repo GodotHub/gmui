@@ -1,5 +1,4 @@
 # Godot 4+ specific ignores
 /.godot
 /.vscode
-/core/components/build
 *.obj
