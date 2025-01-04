@@ -2,3 +2,9 @@
 /.godot
 /.vscode
 *.obj
+.clang-format
+*.dll
+*.so
+*.lib
+*.exp
+.sconsign.dblite
